@@ -1,16 +1,16 @@
 data "aws_ami" "amzlinux2" {
-    most_recent = true
-    owners = ["amazon"]
+  most_recent = true
+  owners      = ["amazon"]
   filter {
-    name = "name"
+    name   = "name"
     values = ["al2023-ami*"]
   }
   filter {
-    name = "root-device-type"
+    name   = "root-device-type"
     values = ["ebs"]
   }
   filter {
-    name = "architecture"
+    name   = "architecture"
     values = ["x86_64"]
   }
 
